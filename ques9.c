@@ -2,7 +2,7 @@
 
 int main() {
     int marks[10];
-    int i, found = 0;
+    int i, got = 0;
 
     printf("Enter 10 marks:\n");
     for(i = 0; i < 10; i++) {
@@ -12,12 +12,12 @@ int main() {
     for(i = 0; i < 10; i++) {
         if(marks[i] == 99) {
             printf("99 found at position %d\n", i + 1);
-            found = 1;
+            got = 1;
             break;
         }
     }
 
-    if(found == 0) {
+    if(got == 0) {
         printf("99 not present in the list.\n");
     }
 
